@@ -10,8 +10,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         [InlineKeyboardButton("Buy YouTube Views", url="https://cheapestsmmpanels.com/")],
     ]
     reply_markup = InlineKeyboardMarkup(keyboard)
-    await update.message.reply_text("Welcome to TrustSMM!")
-Choose a service below:", reply_markup=reply_markup)
+    await update.message.reply_text("Welcome to TrustSMM!\nChoose a service below:", reply_markup=reply_markup)
 
 if __name__ == "__main__":
     app = ApplicationBuilder().token(BOT_TOKEN).build()
